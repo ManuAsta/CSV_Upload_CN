@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-// const uri= process.env.MONGO_URI;
+const uri= process.env.MONGO_URI;
 
-const uri='mongodb://127.0.0.1:27017/csv_upload'
+//const uri='mongodb://127.0.0.1:27017/csv_upload'
 
 async function main() {
   await mongoose.connect(uri);
