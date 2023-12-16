@@ -1,0 +1,47 @@
+#csv-file-container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px; }
+  #csv-file-container #search-sort {
+    margin-top: 30px;
+    margin-bottom: 40px; }
+    #csv-file-container #search-sort .page-btn {
+      border: none;
+      background-color: rgba(24, 53, 196, 0.6);
+      padding: 2px;
+      border-radius: 6px; }
+      #csv-file-container #search-sort .page-btn:disabled {
+        background-color: rgba(94, 85, 85, 0.1); }
+      #csv-file-container #search-sort .page-btn:active {
+        transform: scale(0.9); }
+    #csv-file-container #search-sort .input-group {
+      width: 60%; }
+    #csv-file-container #search-sort .btn-dark {
+      font-size: 1.1rem; }
+    #csv-file-container #search-sort .dropdown-menu {
+      max-width: 100px;
+      min-width: 50px;
+      background-color: black; }
+      #csv-file-container #search-sort .dropdown-menu a {
+        text-align: center;
+        color: white; }
+        #csv-file-container #search-sort .dropdown-menu a:hover {
+          color: black; }
+  #csv-file-container table th {
+    border-bottom: 2px solid black;
+    border-right: 1px solid black;
+    font-size: 1.1rem;
+    padding: 5px 0; }
+  #csv-file-container table .sort-button {
+    background-color: rgba(128, 128, 128, 0.5);
+    border: none;
+    padding: 3px; }
+    #csv-file-container table .sort-button:hover {
+      transform: scale(1.1); }
+    #csv-file-container table .sort-button:active {
+      background-color: grey; }
+  #csv-file-container #entries {
+    color: #3636ac;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700; }

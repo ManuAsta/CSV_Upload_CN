@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/css/home.css">
+
+<main id="layout-main">
+    <div id="layout-title">
+        <img src="/images/title.png" alt="title">
+    </div>
+    <h3>Upload CSV File Here</h3>
+    <form action="/upload-csv" method="post" enctype="multipart/form-data" id="csv-form">
+        <input type="file" name="csv-file" accept=".csv" required/>
+        <button type="submit" class="btn btn-dark">Upload</button>
+     </form>
+     <h3><u>Uploaded Files:</u></h3>
+     <div id="files-list-container" class="d-flex justify-content-around flex-wrap">
+        <%if(locals.files.length>0){%>
+            <%for(file of locals.files){%>
+                <div class="csv-file">
+                    <img src="/images/csv.png" width="80px" alt="csv-file">
+                    <h6><%=file.name%></h6>
+                    <p><a href="/csv/<%=file._id%>" class="link-underline-info">View</a></p>
+                </div>
+            <%}%>
+        <%}else{%>
+            <h1>No file has been Uploaded Yet!</h1>
+        <%}%>
+        
+     </div>
+</main>
+
+
+
+<script type="text/javascript" src="/js/home.js"></script>

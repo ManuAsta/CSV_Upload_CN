@@ -1,0 +1,10 @@
+.navbar {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  padding: 0 20px;
+  height: 60px; }
+  .navbar .btn {
+    font-weight: 700; }
+  .navbar .logo {
+    padding: 0; }
