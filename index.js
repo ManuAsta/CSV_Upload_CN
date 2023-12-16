@@ -1,6 +1,8 @@
+//loading dotenv
+const dotenv=require("dotenv");
 const express = require('express')
 const app = express();
-const port=8000;
+const port= process.env.PORT ||8000;
 const expressLayouts=require('express-ejs-layouts');
 const sassMiddleware = require('node-sass-middleware')
 const db=require('./config/mongoose');
